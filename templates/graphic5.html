@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        <title>{{ headline }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    </head>
+    <body>
+      <div class="menu" >
+          <h1>  
+            <ul><a href="{{ url_for('index') }}">Homepage</a></ul>
+            <ul><a href="{{ url_for('graphic1') }}">Chapter1</a></ul> 
+            <ul><a href="{{ url_for('graphic2') }}">Chapter2</a></ul> 
+            <ul><a href="{{ url_for('graphic3') }}">Chapter3</a></ul> 
+            <ul><a href="{{ url_for('graphic4') }}">Chapter4</a></ul> 
+            <ul><a href="{{ url_for('graphic5') }}">Chapter5</a></ul> 
+            <ul><a href="{{ url_for('graphic6') }}">Chapter6</a></ul> 
+          </h1>
+      </div>
+    </body>
+    
+    <body>
+        <ul class="graphic" >
+            <img src="{{ url_for('static', filename='2019-05-10  174649.jpg')}}"height="50%" width="50%" style="float: left; margin: 15px">
+        </ul>  
+    </body>
+</html>
